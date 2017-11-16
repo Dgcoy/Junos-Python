@@ -19,9 +19,9 @@ with open('switchlist-Complete') as infile:
 		    print 'Working on:' , host
 		    dev.open()
 		    date = dt.datetime.today().strftime("%m-%d-%Y")
-		    config = dev.rpc.get_config(options={'format':'set'})
+		    config = dev.rpc.get_config(options={'format':'text'})
                     #Destination location for Config backups
-		    ConfigFile = '/' + date + "/" + host + '.txt'
+		    ConfigFile = '/' + date + "/" + host.strip() + '.txt'
 		    a = os.path.dirname(ConfigFile)
 		    if not os.path.exists(a):
 		        os.makedirs(a)
