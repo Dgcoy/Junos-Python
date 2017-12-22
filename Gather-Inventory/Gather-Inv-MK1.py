@@ -13,12 +13,12 @@ import sys
 username = 'root'
 password = getpass("Root Password:")
 try:
-    os.remove('/home/administrator/Projects/Reference-Data/Rundeck-Switches.json')
+    os.remove('SwitchInv')
 except:
     print 'Nothing to remove'
-invbuild = open('/home/administrator/Projects/Reference-Data/SwitchInv', 'w+')
+invbuild = open('SwitchInv', 'w+')
 
-with open('/home/administrator/Projects/Reference-Data/switchlist-Complete') as infile:
+with open('switchlist-Complete') as infile:
     for host in infile:
 
         dev = Device(host=host.strip(), user=username, password=password)
