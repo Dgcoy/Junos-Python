@@ -6,7 +6,7 @@ Just a few simple scripts Ive made public to assist in helping with some basec J
 
 apt-get install python-pip python-dev libxml2-dev
 
-pip install junos-eznc pyYAML cryptography getpass lxml airwaveapiclient
+pip install junos-eznc pyYAML cryptography lxml airwaveapiclient
 
 
 
