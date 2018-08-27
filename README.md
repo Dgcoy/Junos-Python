@@ -1,6 +1,6 @@
 # Junos-Python
 
-Just a few simple scripts Ive made public to assist in helping with some basec Junos processes.
+Just a few simple scripts Ive made public to assist in helping with some basic Junos processes.
 
 **Requirements:**
 
